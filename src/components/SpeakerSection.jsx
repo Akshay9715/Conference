@@ -22,7 +22,7 @@ const SpeakerSection = () => {
               <img
                 alt="Photo of Plenary Speaker 1"
                 class="w-40 h-40 rounded-full mx-auto mb-4 object-cover shadow-lg"
-                src="public\Proffesors\Kaushik.jpg"
+                src="Proffesors\Kaushik.jpg"
               />
               <h4 class="text-lg font-bold">Prof. Kaushik Chatterjee </h4>
 
@@ -32,7 +32,7 @@ const SpeakerSection = () => {
               <img
                 alt="Photo of Plenary Speaker 2"
                 class="w-40 h-40 rounded-full mx-auto mb-4 object-cover shadow-lg"
-                src="public\Proffesors\JKT_2.jpg"
+                src="Proffesors\JKT_2.jpg"
               />
               <h4 class="text-lg font-bold">Prof. Jitendra Thakur</h4>
 
@@ -47,7 +47,7 @@ const SpeakerSection = () => {
               <img
                 alt="Photo of Invited Speaker"
                 class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-md"
-                src="public\Proffesors\Rodriguez.jpeg"
+                src="Proffesors\Rodriguez.jpeg"
               />
               <h4 class="font-semibold">Prof Rodriguez Manzano</h4>
               <p>Imperial College, London</p>
@@ -56,7 +56,7 @@ const SpeakerSection = () => {
               <img
                 alt="Photo of Invited Speaker"
                 class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-md"
-                src="public\Proffesors\Prashant.jpeg"
+                src="Proffesors\Prashant.jpeg"
               />
               <h4 class="font-semibold"> Prof. Prashant Agarwal</h4>
               <p>Northumbria University,UK </p>
@@ -65,7 +65,7 @@ const SpeakerSection = () => {
               <img
                 alt="Photo of Invited Speaker"
                 class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-md"
-                src="public\Proffesors\simonCork.webp"
+                src="Proffesors\simonCork.webp"
               />
               <h4 class="font-semibold">Prof Simon C Cork</h4>
               <p>Anglia Ruskin University,UK</p>
@@ -74,7 +74,7 @@ const SpeakerSection = () => {
               <img
                 alt="Photo of Invited Speaker"
                 class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-md"
-                src="public\Proffesors\Sriparna.jpeg"
+                src="Proffesors\Sriparna.jpeg"
               />
               <h4 class="font-semibold">Prof. Sriparna Chatterjee</h4>
               <p> IMMT, Bhubaneshwar</p>
@@ -83,7 +83,7 @@ const SpeakerSection = () => {
               <img
                 alt="Photo of Invited Speaker"
                 class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-md"
-                src="public\Proffesors\abhilash.webp"
+                src="Proffesors\abhilash.webp"
               />
               <h4 class="font-semibold"> Prof. Abhilash Patel</h4>
               <p>IIT Kanpur</p>
@@ -112,7 +112,7 @@ const SpeakerSection = () => {
               <img
                 alt="Photo of Invited Speaker"
                 class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-md"
-                src="public\Proffesors\AvinashEranki.jpg"
+                src="Proffesors\AvinashEranki.jpg"
               />
               <h4 class="font-semibold"> Prof. Avinash Eranki</h4>
               <p>IIT Hyderabad</p>
@@ -121,7 +121,7 @@ const SpeakerSection = () => {
               <img
                 alt="Photo of Invited Speaker"
                 class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-md"
-                src="public\Proffesors\Indresh-Yadav.png"
+                src="Proffesors\Indresh-Yadav.png"
               />
               <h4 className="font-semibold"> Prof. Indresh Yadav</h4>
               <p>IIT Bhubaneshwar</p>
@@ -130,7 +130,7 @@ const SpeakerSection = () => {
               <img
                 alt="Photo of Invited Speaker"
                 class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-md"
-                src="public\Proffesors\Kaushik.jpeg"
+                src="Proffesors\Kaushik.jpeg"
               />
               <h4 className="font-semibold"> Prof. Kaushik Choudhury</h4>
               <p>AIC-IPR</p>
