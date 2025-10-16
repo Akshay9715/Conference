@@ -22,12 +22,13 @@ const AboutSection = () => {
               <h3 className="text-2xl font-bold text-accent mb-4">
                 About NIT Rourkela
               </h3>
-              <p className="text-text-light dark:text-text-dark/90 leading-relaxed">
-                National Institute of Technology, Rourkela is a premier
-                institution of higher learning in India. An institute of
-                national importance, it is renowned for its excellence in
-                engineering, science, and technology, fostering innovation and
-                research.
+              <p className="text-text-light dark:text-text-dark/90 leading-relaxed text-justify">
+                NIT Rourkela (the erstwhile Regional Engineering College,
+                renamed on 26th June 2002) is one of the institutes of national
+                importance under the Ministry of Education, Government of India.
+                The government of India has elevated the Regional Engineering
+                College, Rourkela to an autonomous institution under the name of
+                the National Institute of Technology, Rourkela.
               </p>
             </div>
           </div>
@@ -45,11 +46,17 @@ const AboutSection = () => {
               <h3 className="text-2xl font-bold text-accent mb-4">
                 About the Department
               </h3>
-              <p className="text-text-light dark:text-text-dark/90 leading-relaxed">
-                The Department of Biomedical Engineering is at the forefront of
-                bioengineering education and research. It is committed to
-                developing solutions for healthcare challenges through
-                cutting-edge research and interdisciplinary collaboration.
+              <p className="text-text-light dark:text-text-dark/90 leading-relaxed text-justify">
+                The conference aims to provide an excellent platform for
+                engineers, scientists, researchers, and professionals to share
+                knowledge and experiences on the dynamics of the
+                interdisciplinary approaches in solving problems of relevance to
+                bioengineering covering major domains of Biological Innovation,
+                Technology, Engineering and Sciences. The conference will serve
+                as the best platform to learn and share new ideas in the area by
+                connecting the stakeholders involved, particularly students,
+                faculties, engineers, doctors, entrepreneurs, incubators, and
+                enthusiasts.
               </p>
             </div>
           </div>
@@ -59,11 +66,20 @@ const AboutSection = () => {
             <h3 className="text-2xl font-bold text-accent mb-4">
               About the Conference
             </h3>
-            <p className="text-text-light dark:text-text-dark/90 leading-relaxed max-w-3xl mx-auto">
-              This conference aims to bring together leading academic
-              scientists, researchers, and industry experts to exchange and
-              share their experiences and research results on all aspects of
-              Bioengineering for healthcare and society.
+            <p className="text-text-light dark:text-text-dark/90 leading-relaxed max-w-3xl mx-auto text-justify">
+              The Bioengineering Conference 2025, themed “Translation of
+              Bioengineering Research for Healthcare & Society,” brings together
+              leading experts, innovators, and young researchers to explore the
+              future of bioengineering. The conference will showcase advances in
+              biofabrication, biomechanics, nanomaterials, biosensors, systems
+              biology, and healthcare technologies, emphasizing their
+              translation into impactful solutions for patients and society.
+              With keynote talks, invited lectures, and student presentations,
+              the event provides a vibrant platform for collaboration between
+              academia, clinicians, and industry. By fostering dialogue across
+              disciplines, the conference aims to accelerate innovation and
+              highlight the role of bioengineering in building a healthier,
+              sustainable future.
             </p>
           </div>
         </div>

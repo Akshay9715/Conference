@@ -2,9 +2,10 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import About from "./components/About";
 import Registration from "./components/Registration";
 import Home from "./components/Home";
+import OrganizingCommittee from "./components/OrganizingCommittee";
+import PlacesRourkela from "./components/PlacesRourkela";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route path="/registration" element={<Registration />} />
+            <Route path="/committee" element={<OrganizingCommittee />} />
+            <Route path="/places" element={<PlacesRourkela />}></Route>
           </Routes>
           <Footer></Footer>
         </div>

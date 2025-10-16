@@ -42,7 +42,7 @@ const SpeakerSection = () => {
           <h3 class="text-2xl font-bold text-primary text-center mb-8">
             Invited Speakers
           </h3>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             <div class="text-center">
               <img
                 alt="Photo of Invited Speaker"
@@ -106,7 +106,7 @@ const SpeakerSection = () => {
               />
               <h4 class="font-semibold"> Prof. Chinmay Mahapatra</h4>
 
-              <p>NIT Raiput</p>
+              <p>NIT Raipur</p>
             </div>
             <div class="text-center">
               <img
@@ -117,6 +117,8 @@ const SpeakerSection = () => {
               <h4 class="font-semibold"> Prof. Avinash Eranki</h4>
               <p>IIT Hyderabad</p>
             </div>
+          </div>
+          <div className="flex justify-center gap-20 mt-10">
             <div className="text-center">
               <img
                 alt="Photo of Invited Speaker"
@@ -134,6 +136,15 @@ const SpeakerSection = () => {
               />
               <h4 className="font-semibold"> Prof. Kaushik Choudhury</h4>
               <p>AIC-IPR</p>
+            </div>
+            <div className="text-center">
+              <img
+                alt="Photo of Invited Speaker"
+                class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-md"
+                src="Proffesors\gawri.jpeg"
+              />
+              <h4 className="font-semibold"> Prof. Gowri Balachandra</h4>
+              <p>IIT BHU</p>
             </div>
           </div>
         </div>

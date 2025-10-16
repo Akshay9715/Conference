@@ -39,9 +39,6 @@ const Registration = () => {
                       <span className="text-4xl font-black leading-tight tracking-[-0.033em]">
                         ₹2000
                       </span>
-                      <span className="text-base font-bold leading-tight">
-                        /offline
-                      </span>
                     </p>
                   </div>
                   <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7ecf3] dark:bg-slate-700 text-[#0e131b] dark:text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-green-500 hover:text-black">
@@ -51,7 +48,6 @@ const Registration = () => {
                     {/* <span className="material-symbols-outlined text-base">
                       check_circle
                     </span> */}
-                    Online: ₹1000
                   </div>
                 </div>
 
@@ -65,9 +61,7 @@ const Registration = () => {
                       <span className="text-4xl font-black leading-tight tracking-[-0.033em]">
                         ₹6000
                       </span>
-                      <span className="text-base font-bold leading-tight">
-                        /offline
-                      </span>
+                      <span className="text-base font-bold leading-tight"></span>
                     </p>
                   </div>
                   <button
@@ -85,7 +79,6 @@ const Registration = () => {
                     {/* <span className="material-symbols-outlined text-base">
                       check_circle
                     </span> */}
-                    Online: ₹3000
                   </div>
                 </div>
 
@@ -99,9 +92,7 @@ const Registration = () => {
                       <span className="text-4xl font-black leading-tight tracking-[-0.033em]">
                         ₹8000
                       </span>
-                      <span className="text-base font-bold leading-tight">
-                        /offline
-                      </span>
+                      <span className="text-base font-bold leading-tight"></span>
                     </p>
                   </div>
                   <button
@@ -119,7 +110,6 @@ const Registration = () => {
                     {/* <span className="material-symbols-outlined text-base">
                       check_circle
                     </span> */}
-                    Online: ₹4000
                   </div>
                 </div>
               </div>

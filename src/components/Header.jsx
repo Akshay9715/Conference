@@ -49,7 +49,7 @@ function Header() {
                 className="w-1/16 h-full object-contain"
               /> */}
               <span className="text-text-light dark:text-text-dark text-lg font-bold">
-                Bioengineering 2025
+                National Bioengineering Conference 2025
               </span>
             </div>
           </div>
@@ -67,17 +67,13 @@ function Header() {
             >
               Home
             </NavLink>
-            <NavLink
-              key="about"
-              to={`/about`}
-              className={({ isActive }) =>
-                `text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300 ${
-                  isActive ? "text-yellow-400 font-semibold" : ""
-                }`
-              }
+            <button
+              onClick={() => scrollToSection("about")}
+              className={`text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300
+                `}
             >
               About
-            </NavLink>
+            </button>
             <button
               onClick={() => scrollToSection("themes")}
               className={`text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300
@@ -109,6 +105,28 @@ function Header() {
               }
             >
               Registration
+            </NavLink>
+            <NavLink
+              key="committee"
+              to={`/committee`}
+              className={({ isActive }) =>
+                `text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300 ${
+                  isActive ? "text-yellow-400 font-semibold" : ""
+                }`
+              }
+            >
+              Committee
+            </NavLink>
+            <NavLink
+              key="places"
+              to={`/places`}
+              className={({ isActive }) =>
+                `text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300 ${
+                  isActive ? "text-yellow-400 font-semibold" : ""
+                }`
+              }
+            >
+              Places
             </NavLink>
           </div>
 

@@ -4,8 +4,8 @@ import HeroSection from "./HeroSection";
 import SmoothContinuousCarousel from "./SmoothContinuousCarousel";
 import SpeakerSection from "./SpeakerSection";
 import { useLocation, useNavigate } from "react-router-dom";
-import Events from "./Events";
 import AboutSection from "./AboutSection";
+import DeadlineTicker from "./DeadlineTicker";
 
 const Home = () => {
   const location = useLocation();
@@ -34,7 +34,10 @@ const Home = () => {
       <main className="flex-1">
         <HeroSection />
       </main>
-      <AboutSection></AboutSection>
+      <DeadlineTicker></DeadlineTicker>
+      <section id="about">
+        <AboutSection></AboutSection>
+      </section>
       <section id="themes">
         <SmoothContinuousCarousel></SmoothContinuousCarousel>
       </section>

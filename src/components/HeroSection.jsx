@@ -46,7 +46,7 @@ function HeroSection() {
             Translation of Bioengineering Research for Healthcare and Society
           </h1>
           <h2 className="mt-4 text-lg font-medium md:text-xl">
-            11–13 December 2025 • PPA (Auditorium), NIT Rourkela
+            11<sup>th</sup>– 13<sup>th</sup>December 2025 NIT Rourkela
           </h2>
 
           {/* Buttons */}
