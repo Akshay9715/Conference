@@ -128,6 +128,17 @@ function Header() {
             >
               Places
             </NavLink>
+            <NavLink
+              key="accommodation"
+              to={`/accommodation`}
+              className={({ isActive }) =>
+                `text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300 ${
+                  isActive ? "text-yellow-400 font-semibold" : ""
+                }`
+              }
+            >
+              Accommodation
+            </NavLink>
           </div>
 
           {/* Mobile Menu Button */}

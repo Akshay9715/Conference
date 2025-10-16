@@ -6,6 +6,7 @@ import Registration from "./components/Registration";
 import Home from "./components/Home";
 import OrganizingCommittee from "./components/OrganizingCommittee";
 import PlacesRourkela from "./components/PlacesRourkela";
+import Accommodation from "./components/Accommodation";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/registration" element={<Registration />} />
             <Route path="/committee" element={<OrganizingCommittee />} />
             <Route path="/places" element={<PlacesRourkela />}></Route>
+            <Route path="/accommodation" element={<Accommodation />}></Route>
           </Routes>
           <Footer></Footer>
         </div>
