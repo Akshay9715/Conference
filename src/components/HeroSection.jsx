@@ -42,9 +42,8 @@ function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         <div className="max-w-4xl">
-          <h1 className="text-4xl font-black leading-tight tracking-tight md:text-4xl">
-            TITLE : Translation of Bioengineering Research for Healthcare and
-            Society
+          <h1 className="text-2xl font-black leading-tight tracking-tight md:text-2xl">
+            Translation of Bioengineering Research for Healthcare and Society
           </h1>
           <h2 className="mt-4 text-lg font-medium md:text-xl">
             11<sup>th</sup>– 13<sup>th</sup>December 2025 NIT Rourkela

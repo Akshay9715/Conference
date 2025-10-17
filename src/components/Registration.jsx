@@ -13,109 +13,167 @@ const Registration = () => {
                   <p className="text-[#0e131b]  text-4xl font-black leading-tight tracking-[-0.033em]">
                     Registration
                   </p>
-                  <p className="text-primary dark:text-primary/80 text-base font-bold leading-normal">
-                    LAST DATE OF REGISTRATION: 30 Nov, 2025
+                  <p className="text-primary dark:text-blue-900 text-base font-bold leading-normal">
+                    LAST DATE OF REGISTRATION: 07 Dec, 2025
                   </p>
                 </div>
               </div>
 
               {/* Registration cards */}
-              <div className="grid grid-cols-[repeat(auto-fit,minmax(228px,1fr))] gap-4 px-4 py-3">
-                {/* Students */}
-                <div
-                  className="flex flex-1 flex-col gap-4 rounded-lg border border-solid border-[#d0d9e7] dark:border-gray-700 bg-background-light dark:bg-background-dark p-6  transition-transform duration-300 hover:scale-105"
-                  onClick={() =>
-                    window.open(
-                      "https://docs.google.com/forms/d/e/1FAIpQLSdu5ZMFUL7gFsIKpZc6GgvL9ZDKT5pKTwZ7nKDPNaaJRA-Q4A/viewform",
-                      "_blank"
-                    )
-                  }
+              <div class="px-4 py-3">
+                <div class="overflow-x-auto rounded-lg border border-solid border-[#d0d9e7] dark:border-gray-700">
+                  <table class="w-full text-left text-sm text-[#0e131b] dark:text-slate-300">
+                    <thead class="bg-[#e7ecf3] dark:bg-slate-700 text-xs uppercase text-[#0e131b] dark:text-slate-50">
+                      <tr>
+                        <th class="px-6 py-3 font-bold" scope="col">
+                          Participants
+                        </th>
+                        <th class="px-6 py-3 font-bold" scope="col">
+                          Offline Fee
+                        </th>
+                        <th class="px-6 py-3 font-bold" scope="col">
+                          Online Fee
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b border-solid border-[#d0d9e7] dark:border-gray-700 bg-background-light dark:bg-background-dark">
+                        <td class="whitespace-nowrap px-6 py-4 font-medium text-[#0e131b]">
+                          Students
+                        </td>
+                        <td class="px-6 py-4 text-black">₹ 4000</td>
+                        <td class="px-6 py-4 text-black">₹ 1500</td>
+                      </tr>
+                      <tr class="border-b border-solid border-[#d0d9e7] dark:border-gray-700 bg-background-light dark:bg-background-dark">
+                        <td class="whitespace-nowrap px-6 py-4 font-medium text-[#0e131b]">
+                          Faculty
+                        </td>
+                        <td class="px-6 py-4 text-black">₹ 6000</td>
+                        <td class="px-6 py-4 text-black">₹ 3000</td>
+                      </tr>
+                      <tr class="bg-background-light dark:bg-background-dark">
+                        <td class="whitespace-nowrap px-6 py-4 font-medium text-[#0e131b]">
+                          Industry
+                        </td>
+                        <td class="px-6 py-4 text-black">₹ 8000</td>
+                        <td class="px-6 py-4 text-black">₹ 4000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="text-[#0e131b] text-base font-normal leading-normal pb-3 pt-4">
+                  Registration for student/ staff of NIT Rourkela is free.
+                </p>
+              </div>
+              <div class="my-8 text-center px-4">
+                <a
+                  class="inline-flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-blue-800 text-slate-50 text-lg font-bold leading-normal tracking-[0.015em] transition-transform duration-200 hover:scale-105 hover:bg-blue-900"
+                  href="https://forms.gle/hdDimrHsTPwYZbeH8"
                 >
-                  <div className="flex flex-col gap-1">
-                    <h1 className="text-[#0e131b] text-base font-bold leading-tight">
-                      Students
-                    </h1>
-                    <p className="flex items-baseline gap-1 text-[#0e131b] ">
-                      <span className="text-4xl font-black leading-tight tracking-[-0.033em]">
-                        ₹2000
-                      </span>
-                    </p>
+                  Register Now
+                </a>
+              </div>
+              <div class="mt-8 px-4">
+                <h2 class="text-[#0e131b] text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">
+                  Registration Includes
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                  <div class="p-6 rounded-lg border border-solid border-primary/50 dark:border-primary/70 bg-primary/10 dark:bg-primary/20">
+                    <h3 class="text-primary text-[#0e131b] text-lg font-bold mb-4">
+                      Offline Participants
+                    </h3>
+                    <ul class="space-y-3 text-[#0e131b] dark:text-slate-300 text-sm">
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-teal-400 mt-0.5">
+                          check_circle
+                        </span>
+                        <span className="text-black">
+                          Food and accommodation for 3 days including 1 day
+                          special dinner.
+                        </span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-teal-400 mt-0.5">
+                          check_circle
+                        </span>
+                        <span className="text-black">
+                          Kit for the conference.
+                        </span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-teal-400 mt-0.5">
+                          check_circle
+                        </span>
+                        <span className="text-black">
+                          Chance to participate in competitions like oral
+                          presentation, poster presentations, business plan
+                          competition and photography competition.
+                        </span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-teal-400 mt-0.5">
+                          check_circle
+                        </span>
+                        <span className="text-black">
+                          Opportunity to Network and meet Industry and academic
+                          leaders.
+                        </span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-teal-400 mt-0.5">
+                          check_circle
+                        </span>
+                        <span className="text-black">
+                          Hard copy certificates.
+                        </span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-teal-400 mt-0.5">
+                          check_circle
+                        </span>
+                        <span className="text-black">
+                          Abstract published in abstract book.
+                        </span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-teal-400 mt-0.5">
+                          check_circle
+                        </span>
+                        <span className="text-black">Attend live talks.</span>
+                      </li>
+                    </ul>
                   </div>
-                  <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7ecf3] dark:bg-slate-700 text-[#0e131b] dark:text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-green-500 hover:text-black">
-                    <span className="truncate">Register</span>
-                  </button>
-                  <div className="flex items-center gap-2 text-[13px] font-normal leading-normal text-[#0e131b]">
-                    {/* <span className="material-symbols-outlined text-base">
-                      check_circle
-                    </span> */}
-                  </div>
-                </div>
-
-                {/* Academicians */}
-                <div className="flex flex-1 flex-col gap-4 rounded-lg border border-solid border-primary bg-primary/10 dark:bg-primary/20 p-6 transition-transform duration-300 hover:scale-105">
-                  <div className="flex flex-col gap-1">
-                    <h1 className="text-[#0e131b]  text-base font-bold leading-tight">
-                      Academicians
-                    </h1>
-                    <p className="flex items-baseline gap-1 text-[#0e131b]">
-                      <span className="text-4xl font-black leading-tight tracking-[-0.033em]">
-                        ₹6000
-                      </span>
-                      <span className="text-base font-bold leading-tight"></span>
-                    </p>
-                  </div>
-                  <button
-                    className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7ecf3] dark:bg-slate-700 text-[#0e131b] dark:text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-green-500 hover:text-black"
-                    onClick={() =>
-                      window.open(
-                        "https://docs.google.com/forms/d/e/1FAIpQLSdu5ZMFUL7gFsIKpZc6GgvL9ZDKT5pKTwZ7nKDPNaaJRA-Q4A/viewform",
-                        "_blank"
-                      )
-                    }
-                  >
-                    <span className="truncate">Register</span>
-                  </button>
-                  <div className="flex items-center gap-2 text-[13px] font-normal leading-normal text-[#0e131b] ">
-                    {/* <span className="material-symbols-outlined text-base">
-                      check_circle
-                    </span> */}
-                  </div>
-                </div>
-
-                {/* Industry */}
-                <div className="flex flex-1 flex-col gap-4 rounded-lg border border-solid border-[#d0d9e7] dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 transition-transform duration-300 hover:scale-105">
-                  <div className="flex flex-col gap-1">
-                    <h1 className="text-[#0e131b] text-base font-bold leading-tight">
-                      Industry
-                    </h1>
-                    <p className="flex items-baseline gap-1 text-[#0e131b] ">
-                      <span className="text-4xl font-black leading-tight tracking-[-0.033em]">
-                        ₹8000
-                      </span>
-                      <span className="text-base font-bold leading-tight"></span>
-                    </p>
-                  </div>
-                  <button
-                    className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e7ecf3] dark:bg-slate-700 text-[#0e131b] dark:text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-green-500 hover:text-black"
-                    onClick={() =>
-                      window.open(
-                        "https://docs.google.com/forms/d/e/1FAIpQLSdu5ZMFUL7gFsIKpZc6GgvL9ZDKT5pKTwZ7nKDPNaaJRA-Q4A/viewform",
-                        "_blank"
-                      )
-                    }
-                  >
-                    <span className="truncate">Register</span>
-                  </button>
-                  <div className="flex items-center gap-2 text-[13px] font-normal leading-normal text-[#0e131b]">
-                    {/* <span className="material-symbols-outlined text-base">
-                      check_circle
-                    </span> */}
+                  <div class="p-6 rounded-lg border border-solid border-[#d0d9e7] dark:border-gray-700 bg-background-light dark:bg-background-dark">
+                    <h3 class="text-[#0e131b]text-lg font-bold mb-4">
+                      Online Participants
+                    </h3>
+                    <ul class="space-y-3 text-[#0e131b] dark:text-slate-300 text-sm">
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-teal-400 mt-0.5">
+                          check_circle
+                        </span>
+                        <span className="text-black">
+                          Link to attend lecture.
+                        </span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-teal-400 mt-0.5">
+                          check_circle
+                        </span>
+                        <span className="text-black">E-certificate.</span>
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-base text-primary dark:text-teal-400 mt-0.5">
+                          check_circle
+                        </span>
+                        <span className="text-black">
+                          Abstract published in abstract book.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <p className="text-[#0e131b] text-base leading-normal pb-3 pt-1 px-4 font-bold mt-1 -mb-10">
-                Registration for student/ staff of NIT Rourkela is free.
-              </p>
 
               {/* QR Code & Bank Info */}
               <div className="mt-8 px-4">
@@ -167,26 +225,31 @@ const Registration = () => {
                     </h3>
                     <ul className="space-y-2 text-[#0e131b] text-sm">
                       <li>
-                        <strong>Abstract submission:</strong> 01 Nov 2025
+                        <strong>Abstract submission:</strong>{" "}
+                        <span className="text-red-700">15 Nov 2025</span>
                       </li>
                       <li>
-                        <strong>Acceptance of abstract:</strong> To be announced
+                        <strong>Acceptance of abstract:</strong>{" "}
+                        <span className="text-red-700">30 Nov 2025</span>
                       </li>
                       <li>
                         <strong>Registration Link:</strong>{" "}
-                        <a className="text-primary hover:underline" href="#">
+                        <a
+                          className="text-green-600 hover:underline"
+                          href="https://docs.google.com/forms/d/e/1FAIpQLSdu5ZMFUL7gFsIKpZc6GgvL9ZDKT5pKTwZ7nKDPNaaJRA-Q4A/viewform"
+                        >
                           Click here
                         </a>
                       </li>
                       <li>
                         <strong>Abstract submission link:</strong>{" "}
-                        <a className="text-primary hover:underline" href="#">
+                        <a className="text-green-600 hover:underline" href="#">
                           Click here
                         </a>
                       </li>
                     </ul>
                   </div>
-                  <div className="p-4 rounded-lg border border-solid border-[#d0d9e7] dark:border-gray-700 bg-background-light dark:bg-background-dark">
+                  {/* <div className="p-4 rounded-lg border border-solid border-[#d0d9e7] dark:border-gray-700 bg-background-light dark:bg-background-dark">
                     <h3 className="text-[#0e131b]  text-lg font-bold mb-2">
                       Accommodation &amp; Competition
                     </h3>
@@ -199,7 +262,7 @@ const Registration = () => {
                       Participate in our student competition! More details to
                       follow on the main conference page.
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </main>

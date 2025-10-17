@@ -42,10 +42,10 @@ const Home = () => {
       <section id="themes">
         <SmoothContinuousCarousel></SmoothContinuousCarousel>
       </section>
-      {/* 
+      
       <section id="events">
         <ConferenceHighlights></ConferenceHighlights>
-      </section> */}
+      </section>
       <section id="events">{/* <Events></Events> */}</section>
       <div id="speakers">
         <SpeakerSection></SpeakerSection>

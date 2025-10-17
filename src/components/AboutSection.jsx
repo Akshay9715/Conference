@@ -67,19 +67,38 @@ const AboutSection = () => {
               About the Conference
             </h3>
             <p className="text-text-light dark:text-text-dark/90 leading-relaxed max-w-3xl mx-auto text-justify">
-              The Bioengineering Conference 2025, themed “Translation of
-              Bioengineering Research for Healthcare & Society,” brings together
-              leading experts, innovators, and young researchers to explore the
-              future of bioengineering. The conference will showcase advances in
-              biofabrication, biomechanics, nanomaterials, biosensors, systems
-              biology, and healthcare technologies, emphasizing their
-              translation into impactful solutions for patients and society.
-              With keynote talks, invited lectures, and student presentations,
-              the event provides a vibrant platform for collaboration between
-              academia, clinicians, and industry. By fostering dialogue across
-              disciplines, the conference aims to accelerate innovation and
-              highlight the role of bioengineering in building a healthier,
-              sustainable future.
+              Bioengineering conference is an annual conference, hosted by the
+              department of Biotechnology and Medical Engineering, NIT Rourkela.
+              This year the conference is going to held from 11th-13th of
+              December, 2025. The theme of the BEC-2025 is
+              <strong>
+                "Translation of Bioengineering Research for Healthcare and
+                Society ".
+              </strong>
+              This year, our conference aims to mediate a dialogue among
+              researchers, scientists, engineers for translating the
+              bioengineering research into technologies, products and services
+              serving healthcare and society.
+              <span className="mt-4 block">
+                {" "}
+                As Sir Isaac Newton's famous line, "If I have seen further, it
+                is by standing upon the shoulders of giants," also speaks to the
+                foundational role of knowledge sharing, which scientific
+                translation enables. Our speakers from various walks of
+                bioengineering research bring forth the knowledge and expertise
+                to share with scholars, students, industry personals etc. There
+                will be series of plenary and invited talk to apprise the
+                audience on the recent progress in bioengineering research and
+                innovations. To facilitate the active engagement of students,
+                several events like oral presentation, poster presentation,
+                business plan competition, scientific photography,
+                students-scientists connect sessions will be organised. The
+                conference also invites industry professionals and startups to
+                showcase their products. It will be cohort where the idea and
+                knowledge sharing will happen and enrich the audience with wide
+                spectrum of talks to initiate meaningful dialogue for
+                multi-disciplinary research and innovation.
+              </span>
             </p>
           </div>
         </div>

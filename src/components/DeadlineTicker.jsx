@@ -5,37 +5,37 @@ const DeadlineTicker = () => {
     <div className="relative w-full overflow-hidden bg-primary py-3">
       <div className="whitespace-nowrap flex animate-scroll text-red-600">
         <span className="mx-8 text-lg font-semibold">
-          Submission Deadline – 15th Nov
+          Submission Deadline – 30th Nov
         </span>
         <span className="mx-8 text-lg font-semibold">
           Registration Deadline – 7th Dec
         </span>
         <span className="mx-8 text-lg font-semibold">
-          Submission Deadline – 15th Nov
+          Submission Deadline – 30th Nov
         </span>
         <span className="mx-8 text-lg font-semibold">
           Registration Deadline – 7th Dec
         </span>
         <span className="mx-8 text-lg font-semibold">
-          Submission Deadline – 15th Nov
+          Submission Deadline – 30th Nov
         </span>
         <span className="mx-8 text-lg font-semibold">
           Registration Deadline – 7th Dec
         </span>
         <span className="mx-8 text-lg font-semibold">
-          Submission Deadline – 15th Nov
+          Submission Deadline – 30th Nov
         </span>
         <span className="mx-8 text-lg font-semibold">
           Registration Deadline – 7th Dec
         </span>
         <span className="mx-8 text-lg font-semibold">
-          Submission Deadline – 15th Nov
+          Submission Deadline – 30th Nov
         </span>
         <span className="mx-8 text-lg font-semibold">
           Registration Deadline – 7th Dec
         </span>
         <span className="mx-8 text-lg font-semibold">
-          Submission Deadline – 15th Nov
+          Submission Deadline – 30th Nov
         </span>
         <span className="mx-8 text-lg font-semibold">
           Registration Deadline – 7th Dec

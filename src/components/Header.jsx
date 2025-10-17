@@ -18,12 +18,12 @@ function Header() {
   return (
     //fixed
     <header className="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="  px-4 sm:px-6 ">
+        <div className="flex items-center justify-between h-16 ">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center gap-2">
-              <svg
+            <div className="flex-shrink-0 flex items-center gap-2 ">
+              {/* <svg
                 className="h-8 w-8 text-primary"
                 fill="none"
                 viewBox="0 0 48 48"
@@ -42,20 +42,16 @@ function Header() {
                     <rect fill="white" height="48" width="48" />
                   </clipPath>
                 </defs>
-              </svg>
-              {/* <img
-                src="General/logo.png"
-                alt="nitrkl logo"
-                className="w-1/16 h-full object-contain"
-              /> */}
-              <span className="text-text-light dark:text-text-dark text-lg font-bold">
+              </svg> */}
+              <img src="General/Logo.jpg" alt="" height="9%" width="9%" />
+              <span className="text-text-light dark:text-text-dark text-3xl font-bold">
                 National Bioengineering Conference 2025
               </span>
             </div>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
+          <div className="hidden md:flex md:items-center md:space-x-6">
             <NavLink
               key="home"
               to={`/`}

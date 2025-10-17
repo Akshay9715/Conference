@@ -4,8 +4,8 @@ const Accommodation = () => {
   return (
     <section className="bg-background-light dark:bg-background-dark font-display min-h-screen">
       <div className="relative flex flex-col overflow-x-hidden">
-        <div className="flex flex-col items-center justify-center px-4 md:px-10 lg:px-40 py-10">
-          <div className="max-w-[960px] w-full">
+        <div className="flex flex-col items-center justify-center px-4 md:px-10 lg:px-30 py-10 ">
+          <div className=" w-full">
             {/* Heading */}
             <div className="flex flex-wrap justify-between gap-3 p-4">
               <div className="flex min-w-72 flex-col gap-3">
@@ -63,7 +63,7 @@ const Accommodation = () => {
               strive to ensure a comfortable and pleasant stay for all our
               attendees.
             </p>
-
+            <p className="my-10 font-bold" />
             {/* Travel cards */}
             <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4 p-4">
               {[
@@ -87,12 +87,12 @@ const Accommodation = () => {
                   key={mode.title}
                   className="flex flex-1 gap-4 rounded-xl border border-[#d0d9e7] dark:border-gray-900 bg-white dark:bg-background-dark p-6 flex-col shadow-sm"
                 >
-                  <div className="text-primary">
+                  <div className="text-blue-900">
                     <span
                       className="material-symbols-outlined "
                       style={{ fontSize: "32px" }}
                     >
-                      {/* {mode.icon} */}
+                      {mode.icon}
                     </span>
                   </div>
                   <div className="flex flex-col gap-1">
