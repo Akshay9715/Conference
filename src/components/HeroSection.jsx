@@ -65,11 +65,17 @@ function HeroSection() {
 
             {/* QR Code */}
             <div className="p-2 bg-white rounded-lg shadow-lg">
-              <img
-                alt="QR code for registration"
-                className="w-28 h-28"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS-So55eWwGadGZV8AYuRLTlhweCmffRjrr44Xl1t8XJ8t76YRCbjaVaz1yl8kwJualTBpt3vxj_d_UpaGVMMg916XmvpMykuByn7d4S8j6y47rcCAnxhieE4S7R-ccN9-HPRAOGij4hSivIM-Kfbb9OYcHlsXoeKuwMiBpbjH3_qAW88U7dHEcaooGlr2NPnTHl2eFvTInUdkCr6qHmL07QJsMmFrybaPRgND9oKWYrfk6H24H_8KwJnkyijto9GAcUSEM1RcrUI"
-              />
+              <a
+                href="General/NBCBrochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  alt="QR code for registration"
+                  className="w-28 h-28"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS-So55eWwGadGZV8AYuRLTlhweCmffRjrr44Xl1t8XJ8t76YRCbjaVaz1yl8kwJualTBpt3vxj_d_UpaGVMMg916XmvpMykuByn7d4S8j6y47rcCAnxhieE4S7R-ccN9-HPRAOGij4hSivIM-Kfbb9OYcHlsXoeKuwMiBpbjH3_qAW88U7dHEcaooGlr2NPnTHl2eFvTInUdkCr6qHmL07QJsMmFrybaPRgND9oKWYrfk6H24H_8KwJnkyijto9GAcUSEM1RcrUI"
+                />
+              </a>
             </div>
           </div>
         </div>
