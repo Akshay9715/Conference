@@ -43,7 +43,12 @@ function Header() {
                   </clipPath>
                 </defs>
               </svg> */}
-              <img src="General/Logo.jpg" alt="" height="9%" width="9%" />
+              <img
+                src="General/whitelogo.png"
+                alt=""
+                height="3.9%"
+                width="3.9%"
+              />
               <span className="text-text-light dark:text-text-dark text-3xl font-bold">
                 National Bioengineering Conference 2025
               </span>
