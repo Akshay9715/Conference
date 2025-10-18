@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white font-display">
       <div className="container mx-auto px-6 py-12">
         {/* Main grid section */}
-        <div className="flex justify-between px-16">
+        <div className="flex gap-10 text-[14px] sm:flex justify-between sm:px-16 sm:text-[16px]">
           {/* Left Section */}
           <div>
             <h3 className="text-xl font-bold mb-4">
@@ -50,11 +50,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom copyright */}
-        <div className="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 flex justify-between">
+        <div className="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 sm:flex justify-between">
           <p>© Bioengineering Conference 2025. All rights reserved.</p>
           {/* Right Section - Developer Info */}
           <div className="md:text-right">
-            <div className="flex items-center md:justify-end gap-2 text-gray-100">
+            <div className="flex justify-center mt-2 sm:items-center md:justify-end gap-2 text-gray-100">
               <p className="text-sm">Developed by</p>
               <span className="text-sm">Akshay ❤️</span>
               <a

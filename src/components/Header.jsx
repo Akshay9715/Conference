@@ -1,67 +1,38 @@
-// components/Header.jsx
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
+
   const scrollToSection = (sectionId) => {
     if (window.location.pathname === "/") {
-      // Already on home: scroll immediately
       const section = document.getElementById(sectionId);
       if (section) section.scrollIntoView({ behavior: "smooth" });
     } else {
-      // Navigate to home and tell it what to scroll to
       navigate("/", { state: { scrollTo: sectionId } });
     }
+    setMenuOpen(false); // close menu after click on mobile
   };
 
   return (
-    //fixed
     <header className="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
-      <div className="  px-4 sm:px-6 ">
-        <div className="flex items-center justify-between h-16 ">
+      <div className="px-4 sm:px-6">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center gap-2 ">
-              {/* <svg
-                className="h-8 w-8 text-primary"
-                fill="none"
-                viewBox="0 0 48 48"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_6_330)">
-                  <path
-                    clipRule="evenodd"
-                    d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
-                    fill="currentColor"
-                    fillRule="evenodd"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_6_330">
-                    <rect fill="white" height="48" width="48" />
-                  </clipPath>
-                </defs>
-              </svg> */}
-              <img
-                src="General/whitelogo.png"
-                alt=""
-                height="3.9%"
-                width="3.9%"
-              />
-              <span className="text-text-light dark:text-text-dark text-3xl font-bold">
-                National Bioengineering Conference 2025
-              </span>
-            </div>
+          <div className="flex items-center gap-2">
+            <img src="General/whitelogo.png" alt="logo" className="w-16" />
+            <span className="text-text-light dark:text-text-dark text-xl sm:text-2xl md:text-3xl font-bold break-words text-center block">
+              National Bioengineering Conference 2025
+            </span>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex md:items-center md:space-x-6">
             <NavLink
-              key="home"
-              to={`/`}
+              to="/"
               className={({ isActive }) =>
-                `text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300 ${
+                `text-text-light dark:text-text-dark hover:text-accent text-sm font-medium ${
                   isActive ? "text-yellow-400 font-semibold" : ""
                 }`
               }
@@ -70,37 +41,32 @@ function Header() {
             </NavLink>
             <button
               onClick={() => scrollToSection("about")}
-              className={`text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300
-                `}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("themes")}
-              className={`text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300
-                `}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
             >
               Themes
             </button>
             <button
               onClick={() => scrollToSection("events")}
-              className={`text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300
-                `}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
             >
               Events
             </button>
             <button
               onClick={() => scrollToSection("speakers")}
-              className={`text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300
-                `}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
             >
               Speakers
             </button>
             <NavLink
-              key="registration"
-              to={`/registration`}
+              to="/registration"
               className={({ isActive }) =>
-                `text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300 ${
+                `text-text-light dark:text-text-dark hover:text-accent text-sm font-medium ${
                   isActive ? "text-yellow-400 font-semibold" : ""
                 }`
               }
@@ -108,10 +74,9 @@ function Header() {
               Registration
             </NavLink>
             <NavLink
-              key="committee"
-              to={`/committee`}
+              to="/committee"
               className={({ isActive }) =>
-                `text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300 ${
+                `text-text-light dark:text-text-dark hover:text-accent text-sm font-medium ${
                   isActive ? "text-yellow-400 font-semibold" : ""
                 }`
               }
@@ -119,10 +84,9 @@ function Header() {
               Committee
             </NavLink>
             <NavLink
-              key="places"
-              to={`/places`}
+              to="/places"
               className={({ isActive }) =>
-                `text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300 ${
+                `text-text-light dark:text-text-dark hover:text-accent text-sm font-medium ${
                   isActive ? "text-yellow-400 font-semibold" : ""
                 }`
               }
@@ -130,10 +94,9 @@ function Header() {
               Places
             </NavLink>
             <NavLink
-              key="accommodation"
-              to={`/accommodation`}
+              to="/accommodation"
               className={({ isActive }) =>
-                `text-text-light dark:text-text-dark hover:text-accent dark:hover:text-accent text-sm font-medium hover:text-gray-300 ${
+                `text-text-light dark:text-text-dark hover:text-accent text-sm font-medium ${
                   isActive ? "text-yellow-400 font-semibold" : ""
                 }`
               }
@@ -144,11 +107,101 @@ function Header() {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
-            <button className="text-text-light dark:text-text-dark">
-              <span className="material-symbols-outlined"></span>
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-text-light dark:text-text-dark focus:outline-none"
+            >
+              {/* Hamburger icon */}
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {menuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
             </button>
           </div>
         </div>
+
+        {/* Mobile Dropdown Menu */}
+        {menuOpen && (
+          <div className="md:hidden flex flex-col items-center space-y-4 pb-4">
+            <NavLink
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Home
+            </NavLink>
+            <button
+              onClick={() => scrollToSection("about")}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              About
+            </button>
+            <button
+              onClick={() => scrollToSection("themes")}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Themes
+            </button>
+            <button
+              onClick={() => scrollToSection("events")}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Events
+            </button>
+            <button
+              onClick={() => scrollToSection("speakers")}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Speakers
+            </button>
+            <NavLink
+              to="/registration"
+              onClick={() => setMenuOpen(false)}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Registration
+            </NavLink>
+            <NavLink
+              to="/committee"
+              onClick={() => setMenuOpen(false)}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Committee
+            </NavLink>
+            <NavLink
+              to="/places"
+              onClick={() => setMenuOpen(false)}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Places
+            </NavLink>
+            <NavLink
+              to="/accommodation"
+              onClick={() => setMenuOpen(false)}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Accommodation
+            </NavLink>
+          </div>
+        )}
       </div>
     </header>
   );

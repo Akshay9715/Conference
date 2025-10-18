@@ -9,35 +9,35 @@ const PlacesRourkela = () => {
   };
 
   return (
-    <div className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-background-light dark:bg-background-dark font-display">
+    <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-background-light dark:bg-background-dark font-display">
       {/* Hero Section */}
       <section
-        className="flex min-h-[480px] flex-col items-center justify-center gap-6 bg-cover bg-center bg-no-repeat p-4 m-2 rounded-2xl"
+        className="flex min-h-[480px] flex-col items-center justify-center gap-6 bg-cover bg-center bg-no-repeat p-6 sm:p-10 rounded-2xl mx-4 my-4"
         style={{
           backgroundImage:
             "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAV2y-fAlCGL1pKA7ckzQ1GbGcsgUNfb9fN49pFfL76MJcu8hNk1amDczOkT91trG2XWHKD-WS4qWeKNUNA4kFDZ9nHVvQNROFew9rTG_PJZFtgZO3iQf9LJwe2r86DE_W5dLky6Ky6itUMv3H3BpVVvz5I_jpcLgOAu1LlPE7DRwZlYAuSyYNiGUorq6cMa67TVOm3qW2DbExhtFUG2FljTKj_uGzwbNbvZBWRxwldshImS083mD3nbIcJADinUW13FZeHAmHDdt4')",
         }}
       >
         <div className="flex flex-col gap-2 text-center">
-          <h1 className="text-white text-5xl font-black">
+          <h1 className="text-white text-3xl sm:text-5xl font-black leading-tight">
             Places to Visit in Rourkela
           </h1>
-          <h2 className="text-white text-base font-normal">
+          <h2 className="text-white text-sm sm:text-base font-normal">
             Discover the Charm of Rourkela, Odisha
           </h2>
         </div>
-        <button className="flex items-center justify-center rounded-lg h-12 px-4 bg-blue-900 backdrop-blur-sm text-white font-bold hover:bg-primary transition-colors">
+        <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-blue-900 text-white font-bold hover:bg-blue-800 transition-colors">
           Explore Now
         </button>
       </section>
 
       {/* Welcome Section */}
-      <section className="px-15 py-10 flex justify-center">
+      <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-10 flex justify-center">
         <div className="max-w-[960px]">
-          <h2 className="text-gray-900 text-[22px] font-bold pb-3">
+          <h2 className="text-gray-900 text-2xl font-bold pb-3">
             Welcome to Rourkela
           </h2>
-          <p className=" text-base text-gray-800">
+          <p className="text-gray-800 text-base leading-relaxed">
             Welcome, attendees of the Bioengineering Conference 2025! We invite
             you to explore the vibrant city of Rourkela, a place where industry
             and nature coexist in harmony. Discover the rich culture, history,
@@ -45,14 +45,15 @@ const PlacesRourkela = () => {
           </p>
         </div>
       </section>
-      <section>
-        {/* Places Grid */}
-        <section className="px-70 py-10 grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">
+
+      {/* Places Grid */}
+      <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-10 sm:mx-40">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {[
             {
               name: "Hanuman Vatika",
               desc: "Known for its towering statue of Lord Hanuman.",
-              info: "Distance from NIT: 6-8 km, Open: 6am–8pm, Entry: Free",
+              info: "Distance from NIT: 6–8 km, Open: 6am–8pm, Entry: Free",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDLYMiySUxtrAYXQLUtcSxTCqS_RgyM42sYbM6CvMuXG6LqtTnK1FjsZF0GjSstv2-kFE2RVf7ITnVHlK-D6pIbA8SEVOYw0vbirOMgZ5DypqyLXF20BsxeeciIV8I-4T6I_IrN0G3B4FIHETPEN1G7vufe337dcgT3KdgtBkbZ9ZkOwrXU2BGOv8GYQuTtpIU0EzAmxuIbmJjDhzex4UpquuU3EKXEHWbX1XlscbBXpccEuFB6ViVaGh28JQ03AVA18VwLxBZV-U0",
             },
             {
@@ -82,95 +83,93 @@ const PlacesRourkela = () => {
           ].map((place) => (
             <div
               key={place.name}
-              className="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow gap-2"
+              className="flex flex-col bg-white dark:bg-background-dark rounded-xl overflow-hidden shadow hover:shadow-lg transition-shadow"
             >
               <div
                 className="w-full aspect-video bg-cover bg-center"
                 style={{ backgroundImage: `url(${place.img})` }}
               />
               <div className="p-4">
-                <p className="text-gray-900 text-base font-semibold">
+                <p className="text-gray-900 text-lg font-semibold">
                   {place.name}
                 </p>
-                <p className="text-gray-800 text-sm">{place.desc}</p>
-                <p className="text-gray-800 text-sm">{place.info}</p>
+                <p className="text-gray-700 text-sm mb-1">{place.desc}</p>
+                <p className="text-gray-600 text-xs">{place.info}</p>
               </div>
             </div>
           ))}
-        </section>
+        </div>
       </section>
 
       {/* Map */}
-      <section className="px-10 py-10 flex justify-center">
+      <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-10 flex justify-center">
         <iframe
           title="Rourkela Map"
-          className="rounded-lg w-full max-w-[960px] h-96"
+          className="rounded-lg w-full max-w-[960px] h-80 sm:h-96"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118181.25892556555!2d84.82191599385559!3d22.25477817088921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a201e00665391eb%3A0x9f2913e8e64b7556!2sRourkela%2C%20Odisha!5e0!3m2!1sen!2sin!4v1689771147573!5m2!1sen!2sin"
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
-      <div class="px-40 flex flex-1 justify-center py-5">
-        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-          <h2 class="text-gray-900 font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-            Travel Tips
-          </h2>
-          <div class="p-4 grid md:grid-cols-2 gap-6">
-            <div class="bg-white dark:bg-background-dark/70 p-6 rounded-lg shadow-sm">
-              <h3 class="text-lg font-bold text-blue-900 mb-2">
-                Transportation
-              </h3>
-              <p class="text-gray-900">
-                Auto-rickshaws and cycle-rickshaws are common for short
-                distances. App-based services like Ola and Uber are also
-                available. For longer trips, consider hiring a taxi.
-              </p>
-            </div>
-            <div class="bg-white dark:bg-background-dark/70 p-6 rounded-lg shadow-sm">
-              <h3 class="text-lg font-bold text-blue-900 mb-2">Weather</h3>
-              <p class="text-gray-900">
-                The conference is in winter, expect pleasant days and cool
-                nights. Light woolens or a jacket are recommended, especially
-                for the evenings.
-              </p>
-            </div>
-            <div class="bg-white dark:bg-background-dark/70 p-6 rounded-lg shadow-sm">
-              <h3 class="text-lg font-bold text-blue-900 mb-2">Cuisine</h3>
-              <p class="text-gray-900">
-                Don't miss out on local Odiya cuisine. Try dishes like 'Pakhala
-                Bhata', 'Dalma', and sweets like 'Chhena Poda'. The city also
-                offers a variety of multi-cuisine restaurants.
-              </p>
-            </div>
-            <div class="bg-white dark:bg-background-dark/70 p-6 rounded-lg shadow-sm">
-              <h3 class="text-lg font-bold text-blue-900 mb-2">Safety</h3>
-              <p class="text-gray-900">
-                Rourkela is generally a safe city. However, it's always wise to
-                be aware of your surroundings, especially at night. Keep your
-                valuables secure.
-              </p>
-            </div>
+
+      {/* Travel Tips */}
+      <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-10">
+        <div className="max-w-[960px] mx-auto">
+          <h2 className="text-gray-900 text-2xl font-bold pb-5">Travel Tips</h2>
+          <div className="grid gap-6 sm:grid-cols-2">
+            {[
+              {
+                title: "Transportation",
+                content:
+                  "Auto-rickshaws and cycle-rickshaws are common for short distances. Ola and Uber are available. For longer trips, consider hiring a taxi.",
+              },
+              {
+                title: "Weather",
+                content:
+                  "The conference is in winter, expect pleasant days and cool nights. Light woolens or a jacket are recommended, especially for the evenings.",
+              },
+              {
+                title: "Cuisine",
+                content:
+                  "Don't miss out on local Odiya cuisine — try 'Pakhala Bhata', 'Dalma', and sweets like 'Chhena Poda'. Rourkela also offers multi-cuisine restaurants.",
+              },
+              {
+                title: "Safety",
+                content:
+                  "Rourkela is generally safe. Still, stay aware of your surroundings, especially at night, and keep valuables secure.",
+              },
+            ].map((tip) => (
+              <div
+                key={tip.title}
+                className="bg-white dark:bg-background-dark/70 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="text-lg font-bold text-blue-900 mb-2">
+                  {tip.title}
+                </h3>
+                <p className="text-gray-900 text-sm">{tip.content}</p>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
-      <div class="px-40 flex flex-1 justify-center py-10">
-        <div class="layout-content-container flex flex-col max-w-[960px] flex-1 items-center text-center">
-          <h2 class="text-gray-900 text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">
-            Ready to Join Us?
-          </h2>
-          <p class="text-gray-600mb-6">
-            Register now for the Bioengineering Conference 2025 and be part of
-            this exciting event.
-          </p>
-          <button
-            class="my-3 flex min-w-[84px] max-w-[480px] bg-blue-800 cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-slate-50 text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-900 transition-colors"
-            onClick={redirectRegister}
-          >
-            <span class="truncate">Register for the Conference</span>
-          </button>
-        </div>
-      </div>
+      </section>
+
+      {/* CTA */}
+      <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-10 text-center">
+        <h2 className="text-gray-900 text-2xl font-bold mb-4">
+          Ready to Join Us?
+        </h2>
+        <p className="text-gray-700 mb-6">
+          Register now for the Bioengineering Conference 2025 and be part of
+          this exciting event.
+        </p>
+        <button
+          onClick={redirectRegister}
+          className="rounded-lg h-12 px-6 bg-blue-800 text-white font-bold hover:bg-blue-900 transition-colors"
+        >
+          Register for the Conference
+        </button>
+      </section>
     </div>
   );
 };
