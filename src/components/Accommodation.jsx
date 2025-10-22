@@ -35,7 +35,7 @@ const Accommodation = () => {
                 {
                   name: "Faculty Guest House",
                   desc: "Exclusive and serene guest house for esteemed faculty members.",
-                  img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDhjyhTFrXJqgAVJz8X8lMX9p5Vf8NOTvX9-LIvmDruBa3qoAeHNknH9_Y6W_YX-5cVNYktga9_-N1N6GrnaihouNMDMNZEd1WGbg0NRlDbDp7sopn031ywa_nQ9bQblx9AmK4TzUjH47q2YG_dqikSD0y82_myh6SFpkUJOjgIN4vc8MX6VFZhQkZEkGTAtsJTJeC4gHFFDuBrO7eCWdzgTCEAkd94pkl8wXnXaj2720aVd3yMAX6fpNm9fJwvpnKgMK-42vcsFZA",
+                  img: "General/nitgueshouse.avif",
                 },
               ].map((item) => (
                 <div key={item.name} className="flex flex-col gap-3 pb-3">

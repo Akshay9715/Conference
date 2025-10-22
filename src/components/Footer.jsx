@@ -56,7 +56,7 @@ const Footer = () => {
           <div className="md:text-right">
             <div className="flex justify-center mt-2 sm:items-center md:justify-end gap-2 text-gray-100">
               <p className="text-sm">Developed by</p>
-              <span className="text-sm">Akshay ❤️</span>
+              <span className="text-sm">Akshay</span>
               <a
                 href="https://github.com/Akshay9715"
                 target="_blank"

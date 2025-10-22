@@ -7,6 +7,10 @@ const PlacesRourkela = () => {
   const redirectRegister = () => {
     navigate("/registration");
   };
+  const redirectPlaces = () => {
+    const section = document.getElementById("places");
+    if (section) section.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden bg-background-light dark:bg-background-dark font-display">
@@ -26,7 +30,10 @@ const PlacesRourkela = () => {
             Discover the Charm of Rourkela, Odisha
           </h2>
         </div>
-        <button className="flex items-center justify-center rounded-lg h-12 px-6 bg-blue-900 text-white font-bold hover:bg-blue-800 transition-colors">
+        <button
+          className="flex items-center justify-center rounded-lg h-12 px-6 bg-blue-900 text-white font-bold hover:bg-blue-800 transition-colors"
+          onClick={redirectPlaces}
+        >
           Explore Now
         </button>
       </section>
@@ -47,7 +54,10 @@ const PlacesRourkela = () => {
       </section>
 
       {/* Places Grid */}
-      <section className="px-4 sm:px-6 md:px-10 lg:px-20 py-10 sm:mx-40">
+      <section
+        className="px-4 sm:px-6 md:px-10 lg:px-20 py-10 sm:mx-40"
+        id="places"
+      >
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {[
             {

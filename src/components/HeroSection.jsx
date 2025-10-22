@@ -59,22 +59,23 @@ function HeroSection() {
             >
               <span className="truncate ">Register Now</span>
             </button>
-            <button className="w-full sm:w-auto flex min-w-[160px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white/20 text-white text-base font-bold leading-normal tracking-wide backdrop-blur-sm hover:bg-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent focus:ring-offset-background-dark transition-colors">
-              <span className="truncate">Submit Abstract</span>
-            </button>
+            <a href="https://forms.gle/A4ddYGF7XpiNUzT49" target="_blank">
+              <button className="w-full sm:w-auto flex min-w-[160px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white/20 text-white text-base font-bold leading-normal tracking-wide backdrop-blur-sm hover:bg-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent focus:ring-offset-background-dark transition-colors">
+                <span className="truncate">Submit Abstract</span>
+              </button>
+            </a>
 
             {/* QR Code */}
-            <div className="p-2 bg-white rounded-lg shadow-lg">
+            <div
+              className=" bg-blue-500w-full sm:w-auto flex min-w-[160px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-lg hover:bg-accent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent focus:ring-offset-background-dark transition-colors
+             border-2 p-2 bg-blue-900 border-blue-900 "
+            >
               <a
                 href="General/NBCBrochure.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  alt="QR code for registration"
-                  className="w-28 h-28"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS-So55eWwGadGZV8AYuRLTlhweCmffRjrr44Xl1t8XJ8t76YRCbjaVaz1yl8kwJualTBpt3vxj_d_UpaGVMMg916XmvpMykuByn7d4S8j6y47rcCAnxhieE4S7R-ccN9-HPRAOGij4hSivIM-Kfbb9OYcHlsXoeKuwMiBpbjH3_qAW88U7dHEcaooGlr2NPnTHl2eFvTInUdkCr6qHmL07QJsMmFrybaPRgND9oKWYrfk6H24H_8KwJnkyijto9GAcUSEM1RcrUI"
-                />
+                Brochure
               </a>
             </div>
           </div>

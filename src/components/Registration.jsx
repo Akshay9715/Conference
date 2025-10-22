@@ -237,13 +237,18 @@ const Registration = () => {
                         <a
                           className="text-green-600 hover:underline"
                           href="https://docs.google.com/forms/d/e/1FAIpQLSdu5ZMFUL7gFsIKpZc6GgvL9ZDKT5pKTwZ7nKDPNaaJRA-Q4A/viewform"
+                          target="_blank"
                         >
                           Click here
                         </a>
                       </li>
                       <li>
                         <strong>Abstract submission link:</strong>{" "}
-                        <a className="text-green-600 hover:underline" href="#">
+                        <a
+                          className="text-green-600 hover:underline"
+                          href="https://docs.google.com/forms/d/e/1FAIpQLScKBDh67VRntI_82vcm9xwKnDTGM7fCq5IGgYs4lvhHUL-lhg/viewform"
+                          target="_blank"
+                        >
                           Click here
                         </a>
                       </li>

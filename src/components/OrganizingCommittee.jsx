@@ -13,12 +13,12 @@ const OrganizingCommittee = () => {
           </div>
 
           {/* Patron */}
-          <h2 className="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+          <h2 className="text-text-light dark:text-text-dark text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">
             Patron
           </h2>
           <div className="flex p-4">
-            <div className="flex w-full flex-col gap-4 md:flex-row md:justify-between md:items-center">
-              <div className="flex gap-4 items-center">
+            <div className="flex w-full flex-col gap-4 md:flex-row md:justify-between md:items-center ml-12 ">
+              <div className="flex gap-4 items-center w-full justify-center">
                 <div
                   className="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32"
                   style={{
@@ -39,12 +39,12 @@ const OrganizingCommittee = () => {
           </div>
 
           {/* Chairman */}
-          <h2 className="text-text-light dark:text-text-dark text-[22px] font-bold px-4 pb-3 pt-5 border-t-2">
+          <h2 className="text-text-light dark:text-text-dark text-[22px] font-bold px-4 pb-3 pt-5 border-t-2 text-center">
             Chairman
           </h2>
           <div className="flex p-4">
             <div className="flex w-full flex-col gap-4 md:flex-row md:justify-between md:items-center">
-              <div className="flex gap-4 items-center">
+              <div className="flex gap-4 items-center w-full justify-center">
                 <div
                   className="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 w-32"
                   style={{
@@ -65,7 +65,7 @@ const OrganizingCommittee = () => {
           </div>
 
           {/* Convenors */}
-          <h2 className="text-text-light dark:text-text-dark text-[22px] font-bold px-4 pb-3 pt-5 border-t-2">
+          <h2 className="text-text-light dark:text-text-dark text-[22px] font-bold px-4 pb-3 pt-5 border-t-2 text-center">
             Convenors
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
@@ -82,7 +82,7 @@ const OrganizingCommittee = () => {
               },
               {
                 name: "Prof. Amrita Singh",
-                email: "singhnitrkl.ac.in",
+                email: "singham@nitrkl.ac.in",
                 img: "Proffesors/amrita.png",
               },
               {
@@ -121,7 +121,7 @@ const OrganizingCommittee = () => {
               ["Bala Chakravarthy Neelapu", "Assistant Professor Grade-I"],
               ["Balasubramanian P", "Associate Professor"],
               ["Bihukalyan Prasad Nayak", "Assistant Professor Grade-I"],
-              ["Bikash Chandra Maharaj","Assistant Professor Grade-II"],
+              ["Bikash Chandra Maharaj", "Assistant Professor Grade-II"],
               ["Earu Banoth", "Assistant Professor Grade-I"],
               ["Kasturi Dutta", "Associate Professor"],
               ["Krishna Pramanik", "Professor"],
@@ -138,10 +138,10 @@ const OrganizingCommittee = () => {
                 key={i}
                 className="bg-white dark:bg-background-dark/50 p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
               >
-                <p className="text-text-light dark:text-text-dark font-bold">
+                <p className="text-text-light dark:text-text-dark font-bold text-center">
                   {name}
                 </p>
-                <p className="text-subtext-light dark:text-subtext-dark">
+                <p className="text-subtext-light dark:text-subtext-dark text-center">
                   {role}
                 </p>
               </div>
