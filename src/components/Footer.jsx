@@ -30,12 +30,7 @@ const Footer = () => {
               <a
                 href="mailto:author.nbc.2025@gmail.com"
                 className="text-gray-400 hover:text-accent flex items-center gap-2"
-              >
-                <span className="material-symbols-outlined text-accent text-sky-500">
-                  email
-                </span>
-                <span>author.nbc.2025@gmail.com</span>
-              </a>
+              ></a>
               <a
                 href="tel:+918105648520"
                 className="text-gray-400 hover:text-accent flex items-center gap-2"
