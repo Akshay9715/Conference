@@ -185,7 +185,7 @@ const Registration = () => {
                     <img
                       className="rounded-lg"
                       alt="QR code for registration"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIwD5zrlfT5Kzs-83FujkpNvguyvdty8Mkas3xu_IwvKP7er1n5BxcDVhLqDZTmgdZaYTy16Omgl0gQIvUk0iMn1A90zILyUyl9NakXcdNDNzneKwX7w8oKEoUq3d8MKq8qyUPeiQ-zFdH9-8K1rL6wxbrbdwHvgq_XdZ8gAs-mhS90k8EbdcXYUokt7_eUdvv_ek2XtOHV9YzGjfKfNoXoHAaA5zIHM8ecgPFbQmwQiIR9sg-XKcTXtvmwl5KAGbLmKKJd04SMKw"
+                      src="General/NewQr.jpg"
                     />
                     <p className="mt-4 text-lg font-semibold text-[#3E92CC] dark:text-teal-400">
                       Scan the QR Code to register and join us

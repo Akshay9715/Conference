@@ -56,7 +56,7 @@ const OrganizingCommittee = () => {
                     Prof. Devendra Verma
                   </p>
                   <p className="text-subtext-light dark:text-subtext-dark text-base">
-                    HoD, BM
+                    HOD, BM
                   </p>
                   <p className="text-subtext-light dark:text-subtext-dark text-base"></p>
                 </div>
@@ -86,7 +86,7 @@ const OrganizingCommittee = () => {
                 img: "Proffesors/amrita.png",
               },
               {
-                name: "Prof. Anamika Singh Rajput",
+                name: "Prof. Anamika Singh",
                 email: "singhanamika@nitrkl.ac.in",
                 img: "Proffesors/anamika.jpg",
               },
@@ -117,21 +117,21 @@ const OrganizingCommittee = () => {
               ["A Thirugnanam", "Professor"],
               ["Amit Biswas", "Associate Professor"],
               ["Angana Sarkar", "Associate Professor"],
-              ["Anju R. Babu", "Assistant Professor Grade-I"],
-              ["Bala Chakravarthy Neelapu", "Assistant Professor Grade-I"],
+              ["Anju R. Babu", "Assistant Professor"],
+              ["Bala Chakravarthy Neelapu", "Assistant Professor"],
               ["Balasubramanian P", "Associate Professor"],
-              ["Bihukalyan Prasad Nayak", "Assistant Professor Grade-I"],
-              ["Bikash Chandra Maharaj", "Assistant Professor Grade-II"],
-              ["Earu Banoth", "Assistant Professor Grade-I"],
+              ["Bihukalyan Prasad Nayak", "Assistant Professor"],
+              ["Bikash Chandra Maharaj", "Assistant Professor"],
+              ["Earu Banoth", "Assistant Professor"],
               ["Kasturi Dutta", "Associate Professor"],
               ["Krishna Pramanik", "Professor"],
               ["Kunal Pal", "Professor"],
-              ["Lohit Kumar Srinivas Gujjala", "Assistant Professor Grade-II"],
+              ["Lohit Kumar Srinivas Gujjala", "Assistant Professor"],
               ["Mukesh Kumar Gupta", "Professor"],
               ["Nandini Sarkar", "Associate Professor"],
               ["Nivedita Patra", "Associate Professor"],
-              ["Ravi Kant Avvari", "Assistant Professor Grade-I"],
-              ["Sivaraman J.", "Assistant Professor Grade-I"],
+              ["Ravi Kant Avvari", "Assistant Professor"],
+              ["Sivaraman J.", "Assistant Professor"],
               ["Subhankar Paul", "Professor"],
             ].map(([name, role], i) => (
               <div
