@@ -120,7 +120,7 @@ const OrganizingCommittee = () => {
               ["Anju R. Babu", "Assistant Professor"],
               ["Bala Chakravarthy Neelapu", "Assistant Professor"],
               ["Balasubramanian P", "Associate Professor"],
-              ["Bihukalyan Prasad Nayak", "Assistant Professor"],
+              ["Bibhukalyan Prasad Nayak", "Assistant Professor"],
               ["Bikash Chandra Maharaj", "Assistant Professor"],
               ["Earu Banoth", "Assistant Professor"],
               ["Kasturi Dutta", "Associate Professor"],
