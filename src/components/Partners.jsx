@@ -26,7 +26,7 @@ const Partners = () => {
                   <img
                     src="General/partner1.png"
                     alt=""
-                    className="w-50 ml-55"
+                    className="w-50 mx-auto"
                   />
                   <div className="text-text-light dark:text-text-dark/90 leading-relaxed max-w-3xl mx-auto text-justify">
                     The Sustainable Biomanufacturers and Research Society (SBRS)
