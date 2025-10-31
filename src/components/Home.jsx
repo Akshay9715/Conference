@@ -7,6 +7,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import AboutSection from "./AboutSection";
 import DeadlineTicker from "./DeadlineTicker";
 import ConferenceHighlights from "./ConferenceHighlights";
+import Partners from "./Partners";
 
 const Home = () => {
   const location = useLocation();
@@ -42,7 +43,11 @@ const Home = () => {
       <section id="themes">
         <SmoothContinuousCarousel></SmoothContinuousCarousel>
       </section>
-      
+
+      <section id="partners">
+        <Partners></Partners>
+      </section>
+
       <section id="events">
         <ConferenceHighlights></ConferenceHighlights>
       </section>

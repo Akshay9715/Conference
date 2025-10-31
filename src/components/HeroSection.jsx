@@ -12,7 +12,7 @@ function HeroSection() {
     // m-16
     <div
       className="
-    relative w-full h-[calc(100vh-4rem)]"
+    relative w-full h-[calc(92vh-4rem)]"
     >
       {/* Background Image */}
       <div
@@ -42,7 +42,7 @@ function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         <div className="max-w-4xl">
-          <h1 className="text-2xl font-black leading-tight tracking-tight md:text-2xl">
+          <h1 className="text-3xl font-black leading-tight tracking-tight md:text-3xl">
             Translation of Bioengineering Research for Healthcare and Society
           </h1>
           <h2 className="mt-4 text-lg font-medium md:text-xl">

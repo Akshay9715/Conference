@@ -22,7 +22,7 @@ function Header() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <img src="General/whitelogo.png" alt="logo" className="w-16" />
-            <span className="text-text-light dark:text-text-dark text-xl sm:text-2xl md:text-3xl font-bold break-words text-center block">
+            <span className="text-text-light dark:text-text-dark text-xl sm:text-2xl md:text-2xl font-bold break-words text-center block">
               National Bioengineering Conference 2025
             </span>
           </div>
@@ -103,6 +103,12 @@ function Header() {
             >
               Accommodation
             </NavLink>
+            <button
+              onClick={() => scrollToSection("partners")}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Partners
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -200,6 +206,12 @@ function Header() {
             >
               Accommodation
             </NavLink>
+            <button
+              onClick={() => scrollToSection("partners")}
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Partners
+            </button>
           </div>
         )}
       </div>
