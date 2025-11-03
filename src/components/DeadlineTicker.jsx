@@ -3,7 +3,7 @@ import React from "react";
 const DeadlineTicker = () => {
   return (
     <div className="relative w-full overflow-hidden bg-primary py-3">
-      <div className="whitespace-nowrap flex animate-scroll text-red-600">
+      <div className="whitespace-nowrap flex animate-scroll text-green-700">
         <span className="mx-8 text-lg font-semibold">
           Abstract Submission Deadline – 30th Nov
         </span>
