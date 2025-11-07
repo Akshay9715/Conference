@@ -15,12 +15,14 @@ const ConferenceHighlights = () => {
     {
       icon: "lightbulb",
       title: "Business Plan",
-      desc: "Pitch your bio-tech startup idea.",
+      desc: "Pitch your unique bio-tech startup idea.",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdOivqfqGTlCe9CYLFhyxDqT6hiBz7UJQfBgtPSuvpvvM5ldg/viewform",
     },
     {
       icon: "photo_camera",
       title: "Scientific Photography Contest",
       desc: "Capturing the beauty of science.",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSewGDB821sXVwKlowSg6ujWdJHaGrauHl8Cyg-apR4aUItJrA/viewform",
     },
     {
       icon: "groups",
@@ -38,23 +40,27 @@ const ConferenceHighlights = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 p-4">
           {events.map((event, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center text-center gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white p-5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-            >
-              <div className="text-primary text-[32px]">
-                <span className="material-symbols-outlined text-blue-900">
-                  {event.icon}
-                </span>
-              </div>
-              <div className="flex flex-col gap-1">
-                <h3 className="text-[#0e131b text-base font-bold leading-tight">
-                  {event.title}
-                </h3>
-                <p className="text-slate-800 text-sm font-normal leading-normal">
-                  {event.desc}
-                </p>
-              </div>
+            <div>
+              <a href={event.link} target="_blank">
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-center gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white p-5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div className="text-primary text-[32px]">
+                    <span className="material-symbols-outlined text-blue-900">
+                      {event.icon}
+                    </span>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <h3 className="text-[#0e131b text-base font-bold leading-tight">
+                      {event.title}
+                    </h3>
+                    <p className="text-slate-800 text-sm font-normal leading-normal">
+                      {event.desc}
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           ))}
         </div>
