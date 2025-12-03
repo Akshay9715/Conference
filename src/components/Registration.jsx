@@ -226,11 +226,11 @@ const Registration = () => {
                     <ul className="space-y-2 text-[#0e131b] text-sm">
                       <li>
                         <strong>Abstract submission:</strong>{" "}
-                        <span className="text-red-700">15 Dec 2025</span>
+                        <span className="text-red-700">5 Dec 2025</span>
                       </li>
                       <li>
                         <strong>Acceptance of abstract:</strong>{" "}
-                        <span className="text-red-700">15 Dec 2025</span>
+                        <span className="text-red-700">5 Dec 2025</span>
                       </li>
                       <li>
                         <strong>Registration Link:</strong>{" "}
