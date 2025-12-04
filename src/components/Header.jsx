@@ -83,6 +83,13 @@ function Header() {
             >
               Committee
             </NavLink>
+            <a
+              href="General\Schedule_Final_4.pdf"
+              target="_blank"
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Schedule
+            </a>
             <NavLink
               to="/places"
               className={({ isActive }) =>
@@ -199,6 +206,13 @@ function Header() {
             >
               Places
             </NavLink>
+            <a
+              href="General\Schedule_Final_4.pdf"
+              target="_blank"
+              className="text-text-light dark:text-text-dark hover:text-accent text-sm font-medium"
+            >
+              Schedule
+            </a>
             <NavLink
               to="/accommodation"
               onClick={() => setMenuOpen(false)}
